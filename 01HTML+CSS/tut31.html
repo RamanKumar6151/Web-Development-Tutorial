@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: lighter;
+        }
+        h1{
+            background-color: red;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+        /* p inside li in div */
+        /* div li p{
+            color: yeloow;
+            background-color: green;
+            font-weight: bold;
+        } */
+        /* if p is right inside the div*/
+        /* div > p{
+            color: yellow;
+            background-color: green;
+        } */
+        /* p which are just after the div block, not inside the div block */
+        /* p is next sibling of div */
+        /* div + p{
+            color: white;
+            background-color: red;
+        } */
+
+    </style>
+    <title>more on css selector</title>
+</head>
+<body>
+    <h1>this is more on selector</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>another paragraph inside the div</p></li>
+                <p>this is a para inside ul</p>
+            </ul>
+            <p>this is a paragraph</p>
+        </div>
+        <p>this is another paragraph</p>
+    </div>
+    <p>this is outer paragraph</p>
+</body>
+</html>

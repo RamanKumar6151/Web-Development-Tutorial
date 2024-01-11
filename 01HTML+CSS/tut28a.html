@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box tutorial</title>
+    <style>
+        .container{
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            /* initialize the container as flex box */
+            display: flex;
+            /* flex properties */
+            /* default value */
+            /* flex-direction: row; */
+            /* flex-direction: column-reverse; */
+
+
+            flex-wrap: wrap;
+            /* flex-wrap: wrap;
+            flex-wrap: wrap-reverse;
+
+            flex-flow: row-reverse wrap; */
+            /* justify-content: center; */
+            /* justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: space-around; */
+
+            /* align-items: center; */
+            /* align-items: flex-end;
+            align-items: flex-start; */
+
+            
+            align-items: stretch;
+
+        }
+        .item{
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border: 2px solid blue;
+            margin: 10px;
+            padding: 3px;
+        }
+        #item-1{
+            /* order: 2; */
+            /* thee higher the oreder the later it will sjoww itself */
+            /* flex-grow: 3; */
+        }
+        #item-2{
+            /* flex-grow: 2; */
+            /* flex-shrink: 4; */
+            flex-basis: 320px;
+            /* when flex direction is set to row flwex basis will control width if set to column it ill control the height of the item */
+        }
+        #item-3{
+            /* flex: 2 3 344px; */
+            align-self: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>this is a flex box</h1>
+    <div class="container">
+        <div class="item" id="item-1">1st box</div>
+        <div class="item" id="item-2">2nd box</div>
+        <div class="item" id="item-3">3rd box</div>
+        <!-- <div class="item" id="item-4">4th box</div>
+        <div class="item" id="item-5">5th box</div>
+        <div class="item" id="item-6">6th box</div> -->
+    </div>
+</body>
+
+</html>
