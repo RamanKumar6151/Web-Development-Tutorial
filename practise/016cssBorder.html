@@ -1,53 +1,23 @@
-<!-- https://www.w3schools.com/css/css_border.asp -->
-<!-- css borders -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Borders</title>
+    <title>CSS borders</title>
     <style>
-        body{
-            background-color: rgb(50, 50, 50);
+        p{
+            /* border-style: solid dotted ridge inset;
+            border-color: blue red yellow; */
+            /* border shorthand */
+            border: 1px solid red;
+            border-radius: 4px;
         }
     </style>
 </head>
 <body>
-    <p 
-    style="
-    width: 30%; 
-    border: 1px solid white; 
-    border-collapse: collapse; 
-    color: white;">
-        I have borders on all sides.
-    </p>
-    <p 
-    style="
-    width: 30%; 
-    border-bottom: 1px solid red;
-    color: white;">
-        I have red bottom border.
-    </p>
-    <p 
-    style="
-    width: 30%; 
-    border: 1px solid white; 
-    border-radius: 5px;
-    padding: 2px;
-    border-collapse: collapse; 
-    color: white;">
-        I have rounded.
-    </p>
-    <p 
-    style="
-    width: 30%; 
-    /* border: 1px solid white;  */
-    padding: 5px;
-    border-left: 5px solid blue;
-    background-color: white;
-    border-collapse: collapse; 
-    color: black;">
-        I have a blue left border.
-    </p>
+    <p style="border-width: 1px 5px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores perspiciatis esse pariatur corrupti autem repudiandae voluptatibus sed quis hic porro?</p>
+    <p style="border-width: medium;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores perspiciatis esse pariatur corrupti autem repudiandae voluptatibus sed quis hic porro?</p>
+    <p style="border-width: 0 0 0 5px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores perspiciatis esse pariatur corrupti autem repudiandae voluptatibus sed quis hic porro?</p>
+    <p style="border-width: thick medium thin ;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores perspiciatis esse pariatur corrupti autem repudiandae voluptatibus sed quis hic porro?</p>
 </body>
 </html>
