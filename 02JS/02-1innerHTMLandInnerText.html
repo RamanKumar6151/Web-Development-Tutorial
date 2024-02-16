@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerHTML vs innerText</title>
+</head>
+<body>
+    <div id="eg"></div>
+    <script>
+        // document.getElementById('eg').innerText="<b>Hello</b> World!";
+        document.getElementById('eg').innerHTML="<b>Hello</b> World!";
+        // Renders as: <div id="example"><b>Hello</b> World!</div>"
+    </script>
+</body>
+</html>
