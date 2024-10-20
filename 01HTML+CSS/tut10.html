@@ -1,22 +1,46 @@
+<!-- https://youtu.be/BucLTOfLQsk?si=K4m1QWINBA20auDp -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes and Ids</title>
     <style>
-        .redBg{
-            background: red;
+        .redbg {
+            background-color: red;
+        }
+
+        .whitetext {
+            color: white;
+        }
+
+        #mainbox {
+            padding: 5px;
+            font-weight: bold;
+        }
+
+        .class1 {
+            border: 2px solid red;
+            width: 200px;
+            height: 200px;
         }
     </style>
-    <title>Ids and class tutorial</title>
 </head>
+
 <body>
-    <h3>Id and class tutorial</h3>
-    <div id="mainBox" class="redBg blackBorder">
-        this is a mainbox
-    </div>
-    <!-- span.class1.class2.class3*multiplier +tab(to move from one created block to other) -->
-    <span class="class1 class2 class3">first</span><span class="class1 class2 class3">second</span><span class="class1 class2 class3">third</span><span class="class1 class2 class3">four</span>
+    <!-- .classname will create a div with given classname as class -->
+    <h3>Ids and classes</h3>
+    <!-- ids are unique to tag -->
+    <!-- class is can be same for many tags -->
+    <div id="mainbox" class="redbg whitetext">this is div with red background and white text</div>
+    <!-- ctrl+/ for comment -->
+    <!-- span.redbg.whitetext#mainspan -->
+    <span class="redbg whitetext" id="mainspan">this is span</span>
+    <!-- p.class1.classs2.class3*3 -->
+    <p class="class1 class2 class3">box1</p>
+    <p class="class1 class2 class3">box2</p>
+    <p class="class1 class2 class3">box3</p>
 </body>
+
 </html>
