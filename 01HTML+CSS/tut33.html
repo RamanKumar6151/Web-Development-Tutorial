@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
+
+<head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>before after the  pseudo selectors</title>
+    <title>before after the pseudo selectors</title>
     <style>
-        body{
+        body {
             margin: 0px;
             padding: 0px;
             background-color: black;
             color: white;
         }
-        header::before{
+
+        header::before {
             content: "";
             background: url('1.jpg') no-repeat center center/cover;
             /* removes the space created at top and left, probably possible for absolute */
@@ -23,18 +25,21 @@
             width: 100%;
             height: 100%;
             z-index: -1;
-            
-            
+
+
         }
-        .navigation{
+
+        .navigation {
             font-size: 20px;
             display: flex;
         }
-        li{
+
+        li {
             list-style: none;
             padding: 34px 23px;
         }
-        section{
+
+        section {
             margin: 3px 23px;
             height: 344px;
             justify-content: center;
@@ -43,18 +48,21 @@
             align-items: center;
             /* border: 2px solid red; */
         }
-        section::after{
-            content:"this is content"
-        }
-        h3{
-            font-size: 4rem;
-        }
-        p{
-            text-align: center;
+
+        section::after {
+            content: "this is content"
         }
 
+        h3 {
+            font-size: 4rem;
+        }
+
+        p {
+            text-align: center;
+        }
     </style>
 </head>
+
 <body>
     <header>
         <nav class="navbar">
@@ -67,8 +75,10 @@
         </nav>
         <section>
             <h3>welcome to the coding world</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor iusto vel minima qui. Provident amet in obcaecati illum cumque, voluptates eveniet dolorem rem iure distinctio esse, sint debitis, fugit ut!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor iusto vel minima qui. Provident amet in
+                obcaecati illum cumque, voluptates eveniet dolorem rem iure distinctio esse, sint debitis, fugit ut!</p>
         </section>
     </header>
 </body>
+
 </html>
